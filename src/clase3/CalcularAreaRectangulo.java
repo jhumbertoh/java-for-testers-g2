@@ -9,6 +9,9 @@ public class CalcularAreaRectangulo {
          */
         //Crear la instancia del rectangulo 1
         Rectangulo rectangulo1 = new Rectangulo();
+
+        System.out.println("Stop!");
+
         rectangulo1.setAncho(25);
         rectangulo1.setLargo(50);
 

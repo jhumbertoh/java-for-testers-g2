@@ -6,12 +6,13 @@ public class Rectangulo {
     private double ancho;
 
     public Rectangulo() {
-        this.ancho = 0;
-        this.largo = 0;
+     this.largo = 0;
+     this.ancho = 0;
     }
 
     public Rectangulo(double largo, double ancho) {
         this.largo = largo; // Forma 1
+        //this.ancho = ancho;
         setAncho(ancho); // Forma 2
     }
 
@@ -40,7 +41,6 @@ public class Rectangulo {
     }
 
     public double calcularPerimetro() {
-
         return (2 * largo) + (2 * ancho);
     }
 }
