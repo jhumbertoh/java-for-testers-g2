@@ -6,6 +6,7 @@ package clase4;
     1 | 2 | 56 | 5 | 23 | 12 |
  */
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class TicketLoteriaBusquedas {
@@ -63,6 +64,17 @@ public class TicketLoteriaBusquedas {
             Y EL VALOR NO FUE ENCONTRADO
              */
             return false;
+    }
+
+    public static boolean busquedaBinaria(int[] array, int numeroABuscar){
+
+        //El arreglo se debe ordenar primero
+        Arrays.sort(array);
+
+        int index = Arrays.binarySearch(array, numeroABuscar);
+        if(index >=0){
+            return true;
+        }else return false;
     }
 
     public static void imprimirTicketLoteria(int ticket[]){

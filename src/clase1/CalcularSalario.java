@@ -18,7 +18,7 @@ public class CalcularSalario {
         scanner.close();
 
         //Paso 3: Multiplar las horas y la tasa de pago
-        double sueldo =  Math.round(horas * tarifa);
+        double sueldo =  Math.round (horas * tarifa);
 
         //Paso 4: Mostrar el resultado
         System.out.println("El Salario calculado es:" +sueldo);
